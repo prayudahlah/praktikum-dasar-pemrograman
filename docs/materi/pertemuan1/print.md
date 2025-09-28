@@ -2,6 +2,7 @@
 id: materiPrint
 title: Python Print
 sidebar_label: Python Print
+sidebar_position: 1
 ---
 
 ---

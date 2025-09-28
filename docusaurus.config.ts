@@ -31,9 +31,9 @@ const config: Config = {
             },
             items: [
                 {
-                    to: 'docs/materi/intro',
+                    type: 'docSidebar',
                     position: 'left',
-                    sidebarId: 'materialSidebar',
+                    sidebarId: 'materiSidebar',
                     label: 'Materi'
                 },
                 // {
