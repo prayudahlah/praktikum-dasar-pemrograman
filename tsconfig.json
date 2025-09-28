@@ -1,7 +1,0 @@
-{
-    "extends": "@docusaurus/tsconfig",  
-    "compilerOptions": {
-      "baseUrl": "."
-    },
-    "exclude": ["src/plugins/**/*.test.ts"],
-  }
