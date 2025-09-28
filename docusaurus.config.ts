@@ -2,11 +2,13 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import { themes as prismThemes } from 'prism-react-renderer';
 
+const BASE_URL = process.env.NODE_ENV === 'production' ? '/praktikum-dasar-pemrograman/' : '/';
+
 const config: Config = {
-    title: 'Live Brython',
-    tagline: 'Execute and interact with your Markdown Python Codeblocks in Docusaurus 3',
+    title: 'Praktikum Dasar Pemrograman',
+    tagline: 'Sains Data - 2025',
     url: 'https://prayudahlah.github.io',
-    baseUrl: '/praktikum-dasar-pemrograman/',
+    baseUrl: BASE_URL,
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
@@ -15,7 +17,7 @@ const config: Config = {
     trailingSlash: false,
     i18n: {
         defaultLocale: 'en',
-        locales: ['en', 'zh-Hant']
+        locales: ['en']
     },
     future: {
         experimental_faster: true,
@@ -29,15 +31,16 @@ const config: Config = {
             },
             items: [
                 {
-                    to: 'docs/materi',
+                    to: 'docs/materi/intro',
                     position: 'left',
+                    sidebarId: 'materialSidebar',
                     label: 'Materi'
                 },
-                {
-                    to: 'playground',
-                    position: 'left',
-                    label: 'Playground'
-                },
+                // {
+                //     to: 'playground',
+                //     position: 'left',
+                //     label: 'Playground'
+                // },
                 {
                     href: 'https://github.com/prayudahlah/praktikum-dasar-pemrograman',
                     label: 'GitHub',
@@ -58,21 +61,16 @@ const config: Config = {
         [
             '@docusaurus/preset-classic',
             {
+                docs: {
+                    sidebarPath: './sidebars.ts',
+                    editUrl: 'https://github.com/prayudahlah/praktikum-dasar-pemrograman/edit/main/',
+                },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css')
                 }
             } satisfies Preset.Options
         ]
     ],
-    // scripts: [
-    //     {
-    //         src: 'https://umami.gbsl.website/tell-me.js',
-    //         ['data-website-id']: '8783952a-0904-4284-9115-61f387c4499d',
-    //         ['data-domains']: 'lebalz.github.io',
-    //         async: true,
-    //         defer: true
-    //     }
-    // ],
     themes: ['docusaurus-live-brython']
 };
 

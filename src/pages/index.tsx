@@ -21,17 +21,11 @@ function HomepageHeader() {
                     {siteConfig.title}
                 </Heading>
                 <p className="hero__subtitle">
-                    <Translate id="homepage.subtitle">Execute and interact with your Markdown Python Codeblocks in Docusaurus 3</Translate>
+                    <Translate id="homepage.subtitle">Sains Data - 2025</Translate>
                 </p>
                 <div className={styles.buttons}>
-                    <Link className="button button--lg button--success" to={withBaseUrl('docs')}>
-                        <Translate id="homepage.getStarted">Get Started</Translate>
-                    </Link>
-                    <Link className="button button--secondary button--lg" to={withBaseUrl('/demo')}>
-                        <Translate id="homepage.liveDemo">Live Demo</Translate>
-                    </Link>
-                    <Link className="button button--secondary button--lg" to={withBaseUrl('/snippets')}>
-                        <Translate id="homepage.shareCode">Share Code</Translate>
+                    <Link className="button button--secondary button--lg" to={withBaseUrl('/docs/materi/intro')}>
+                        Materi Praktikum 👆
                     </Link>
                 </div>
             </div>
@@ -42,27 +36,14 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
     const { siteConfig } = useDocusaurusContext();
     return (
-        <Layout title={'Interactive Python Codeblocks'} description={siteConfig.tagline}>
+        <Layout title={'Home'} description={siteConfig.tagline}>
             <HomepageHeader />
             <main>
-                <section className={clsx(styles.section)}>
-                    <div className={clsx('card', styles.card)}>
-                        <div className="card__image">
-                            <img
-                                src={require('./images/brython-demo.gif').default}
-                                style={{ clipPath: 'inset(0px 0px 2px 0px)' }}
-                            />
-                        </div>
-                        <div className="card__footer">
-                            <a className="button button--primary button--block" href={useBaseUrl('/demo')}>
-                                <Translate id="homepage.tryIt">Try It!</Translate>
-                            </a>
-                        </div>
-                    </div>
-                    <ContextEditor className={clsx('language-py', styles.code)}>
-                        {`print('Hello Live Brython! ❤️')`}
-                    </ContextEditor>
-                </section>
+                {/* <section className={clsx(styles.section)}> */}
+                {/*     <ContextEditor className={clsx('language-py', styles.code)}> */}
+                {/*         {`print('Hello python enthusiast!!! 👋')`} */}
+                {/*     </ContextEditor> */}
+                {/* </section> */}
             </main>
         </Layout>
     );
