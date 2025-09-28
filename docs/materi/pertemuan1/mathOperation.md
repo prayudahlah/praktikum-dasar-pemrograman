@@ -79,19 +79,36 @@ print(angka)
 
 ## 🔢 Pembagian Bulat
 
+Operator `//` digunakan untuk melakukan pembagian bulat (integer division).
+Artinya, hasil pembagian **selalu dibulatkan ke bawah** menuju bilangan bulat terdekat.
+
+Contoh:
+
 ```py title="pembagian_bulat.py"
 angka = 250
 angka = angka // 25
-print(angka)
+print(f"250 // 25 = {angka}")
+
+angka = 10
+print(f"10 // 3 = {10 // 3}")
+
+angka = -10
+print(f"-10 // 3 = {-10 // 3}")
 ```
 
 ```py title="output"
-10
+250 // 25 = 10
+10 // 3 = 3
+-10 // 3 = -4
 ```
+
+➡️ Perhatikan kasus `-10 // 3` hasilnya `-4`, bukan `-3`, karena Python **selalu membulatkan ke bawah (floor)**, bukan sekadar membuang desimal.
 
 ---
 
 ## 🌀 Modulus
+
+Operator `%` digunakan untuk mendapatkan sisa pembagian.
 
 ```py title="modulus.py"
 angka = 10

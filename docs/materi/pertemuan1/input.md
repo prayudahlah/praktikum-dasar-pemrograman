@@ -125,7 +125,7 @@ nama = input("Masukan Nama\t: ")
 if nama == "":
     print("Nama tidak boleh kosong!")
 ```
->ℹ️ Catatan: Struktur if-else akan dipelajari di pertemuan kedua, jadi di sini hanya diperkenalkan secara singkat.
+>ℹ️ Catatan: Struktur `if-else` akan dipelajari di pertemuan kedua, jadi di sini hanya diperkenalkan secara singkat.
 
 ---
 
@@ -136,13 +136,3 @@ if nama == "":
   ```py
   nama = input("Masukan Nama: ").strip()
   ```
-* Untuk input pilihan, cocokkan dengan kondisi:
-
-  ```py
-  jawab = input("Lanjutkan? (y/n): ").lower()
-  if jawab == "y":
-      print("Program dilanjutkan")
-  else:
-      print("Program dihentikan")
-  ```
-  _(Akan lebih dalam dibahas saat mempelajari if-else di pertemuan kedua)_

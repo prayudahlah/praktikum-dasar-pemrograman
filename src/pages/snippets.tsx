@@ -2,7 +2,6 @@ import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 // @ts-ignore
-import ContextEditor from '@theme/CodeEditor/ContextEditor';
 import styles from './snippets.module.css';
 import React from 'react';
 import Title from '../components/SnippetComponents/Title';
@@ -102,13 +101,6 @@ function Snippet(): JSX.Element {
                 <Title onChange={setTitle} title={init.title} />
                 <Description onChange={setDescription} description={init.description} />
             </div>
-            <ContextEditor
-                className={clsx('language-py')}
-                title={title || 'snippet.py'}
-                onChange={(code: string) => setCode(code)}
-            >
-                {init.code || "print('Hello Python Snippet')"}
-            </ContextEditor>
         </>
     );
 }

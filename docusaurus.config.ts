@@ -20,8 +20,7 @@ const config: Config = {
         locales: ['en']
     },
     future: {
-        experimental_faster: true,
-        experimental_router: 'browser',
+        v4: true
     },
     themeConfig: {
         navbar: {
@@ -71,7 +70,10 @@ const config: Config = {
             } satisfies Preset.Options
         ]
     ],
-    themes: ['docusaurus-live-brython']
+    themes: ['@docusaurus/theme-mermaid'],
+    markdown: {
+        mermaid: true,
+    }
 };
 
 export default config;

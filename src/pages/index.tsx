@@ -6,7 +6,7 @@ import Heading from '@theme/Heading';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Translate from '@docusaurus/Translate';
 // @ts-ignore
-import ContextEditor from '@theme/CodeEditor/ContextEditor';
+// import ContextEditor from '@theme/CodeEditor/ContextEditor';
 
 import styles from './styles.module.css';
 import { useBaseUrlUtils } from '@docusaurus/useBaseUrl';
