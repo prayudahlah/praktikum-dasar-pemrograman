@@ -24,9 +24,9 @@ const config: Config = {
     },
     themeConfig: {
         navbar: {
-            title: 'Prak DP',
+            title: 'Praktikum Dasar Pemrograman',
             logo: {
-                src: 'img/docusaurus.png'
+                src: 'img/logo.svg'
             },
             items: [
                 {
