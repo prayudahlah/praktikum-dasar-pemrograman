@@ -226,3 +226,39 @@ else:
 Masukan Umur : -5
 Umur Tidak Boleh Negatif
 ```
+
+---
+
+## 💡 Tips
+
+Struktur `if-else` dapat digunakan untuk validasi suatu input.
+
+### 1. Validasi skala input
+Misal input suhu Kelvin, tetapi karena suhu Kelvin tidak boleh kurang dari 0,
+dapat dilakukan validasi seperti berikut:
+
+```py title="kelvin_input_handling.py"
+kelvin = float(input("Masukan suhu dalam Kelvin: "))
+if kelvin < 0.0:
+    print("Suhu kelvin tidak boleh kurang dari 0")
+```
+
+```py title="output"
+Masukan suhu dalam Kelvin: -10.2
+Suhu kelvin tidak boleh kurang dari 0
+```
+
+### 2. Input kosong
+
+Jika user hanya menekan Enter:
+
+```py title="error_empty.py"
+nama = input("Masukan Nama: ")
+if nama == "":
+    print("Nama tidak boleh kosong!")
+```
+
+```py title="output"
+Masukan Nama: 
+Nama tidak boleh kosong!
+```

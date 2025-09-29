@@ -116,17 +116,6 @@ Input harus berupa angka!
 
 >ℹ️ Catatan: Penanganan error dengan `try-except` merupakan topik advanced diluar materi praktikum. Untuk sekarang cukup pahami bahwa error ini terjadi jika input tidak sesuai tipe data.
 
-### 2. Input kosong
-
-Jika user hanya menekan Enter:
-
-```py title="error_empty.py"
-nama = input("Masukan Nama\t: ")
-if nama == "":
-    print("Nama tidak boleh kosong!")
-```
->ℹ️ Catatan: Struktur `if-else` akan dipelajari di pertemuan kedua, jadi di sini hanya diperkenalkan secara singkat.
-
 ---
 
 ## 💡 Tips
