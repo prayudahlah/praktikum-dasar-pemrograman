@@ -1,6 +1,2 @@
 # Force all text files to use LF line endings
 * text=auto eol=lf
-
-# Special handling (opsional)
-*.bat   text eol=crlf   # biar file batch Windows tetap CRLF
-*.sh    text eol=lf     # script shell tetap LF
