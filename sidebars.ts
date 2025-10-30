@@ -1,6 +1,6 @@
 import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
 
-const pertemuanCategories = Array.from({ length: 2 }, (_, i) => ({
+const pertemuanCategories = Array.from({ length: 4 }, (_, i) => ({
   type: 'category',
   label: `Pertemuan ${i + 1}`,
   items: [

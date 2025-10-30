@@ -248,7 +248,7 @@ Masukan suhu dalam Kelvin: -10.2
 Suhu kelvin tidak boleh kurang dari 0
 ```
 
-### 2. Input kosong
+### 2. Validasi input tidak kosong
 
 Jika user hanya menekan Enter:
 
